@@ -53,13 +53,11 @@
         <td><%=availableCores%></td>
     </tr>
 </table>
-
-<table border="0" width="100%">
-    <tr><td colspan="2" align="center"><h3>Memory MXBean</h3></td></tr>
-    <tr><td width="200">Heap Memory Usage</td><td>
-        <%=ManagementFactory.getMemoryMXBean().getHeapMemoryUsage()%>
-    </td></tr>
-
+<table>
+    <tr>
+        <td>Heap Memory Usage</td>
+        <td><%=ManagementFactory.getMemoryMXBean().getHeapMemoryUsage()%></td>
+    </tr>
     <tr>
         <td>Non-Heap Memory Usage</td>
         <td><%=ManagementFactory.getMemoryMXBean().getNonHeapMemoryUsage()%></td>
